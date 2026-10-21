@@ -14,11 +14,11 @@ import { partners } from '~/data/company'
         </h2>
       </div>
 
-      <ul class="mt-14 grid grid-cols-2 items-center gap-5 sm:grid-cols-3 lg:grid-cols-5">
-        <li
+      <Marquee :duration="30" class="mt-14">
+        <div
           v-for="partner in partners"
           :key="partner.name"
-          class="group flex h-28 items-center justify-center rounded-2xl border bg-white px-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+          class="flex h-24 w-56 shrink-0 items-center justify-center rounded-2xl border bg-white px-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-green/40 hover:shadow-md sm:w-64"
           :title="partner.name"
         >
           <img
@@ -27,8 +27,8 @@ import { partners } from '~/data/company'
             class="max-h-14 w-auto max-w-full object-contain"
             loading="lazy"
           >
-        </li>
-      </ul>
+        </div>
+      </Marquee>
 
       <p class="mt-8 text-center text-sm text-muted-foreground">
         Multi-brand solutions &amp; services — the right product and expertise for every application.

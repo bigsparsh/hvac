@@ -85,16 +85,76 @@ export const capabilities = [
 ]
 
 export const industries = [
-  'Data Centers',
-  'IT & ITeS',
-  'Banking & Financial Services',
-  'Service & Hospitality',
-  'Healthcare',
-  'Manufacturing',
-  'Warehousing & Logistics',
-  'Commercial Buildings',
-  'Solar Industries',
-  'Education & Research'
+  {
+    name: 'Data Centers',
+    description:
+      'Redundant power and precision cooling that keep always-on compute halls at their rated load.',
+    tags: ['UPS', 'Precision Cooling', 'Containment'],
+    featured: true
+  },
+  {
+    name: 'IT & ITeS',
+    description:
+      'Climate-controlled floors and dependable backup for 24×7 delivery and support teams.',
+    tags: ['VRF / VRV', 'Power Quality', 'AMC'],
+    featured: false
+  },
+  {
+    name: 'Banking & Financial Services',
+    description:
+      'Auditable uptime for branches, trading floors and the data rooms behind them.',
+    tags: ['Backup Power', 'Cooling', 'AMC'],
+    featured: false
+  },
+  {
+    name: 'Service & Hospitality',
+    description:
+      'Guest comfort and tight energy control across hotels, malls and mixed-use facilities.',
+    tags: ['Central HVAC', 'Power Backup', 'AMC'],
+    featured: false
+  },
+  {
+    name: 'Healthcare',
+    description:
+      'Clean-room comfort and medically graded power for hospitals and diagnostic labs.',
+    tags: ['Clean Rooms', 'Medical Power', 'HVAC'],
+    featured: true
+  },
+  {
+    name: 'Manufacturing',
+    description:
+      'Process cooling and stable power that hold production lines to their tolerances.',
+    tags: ['Process Cooling', 'UPS', 'Plant HVAC'],
+    featured: false
+  },
+  {
+    name: 'Warehousing & Logistics',
+    description:
+      'Temperature-stable storage and network-wide uptime from warehouse to last mile.',
+    tags: ['Cold Aisle', 'Monitoring', 'AMC'],
+    featured: false
+  },
+  {
+    name: 'Commercial Buildings',
+    description:
+      'Efficient chillers and VRF plant that keep workplaces comfortable and costs predictable.',
+    tags: ['VRF / VRV', 'Chillers', 'BMS'],
+    featured: false
+  },
+  {
+    name: 'Solar Industries',
+    description:
+      'Line conditioning and plant cooling for module, cell and wafer manufacturing.',
+    tags: ['Process Cooling', 'Power', 'Retrofit'],
+    featured: false
+  },
+  {
+    name: 'Education & Research',
+    description:
+      'Lab-grade environments and dependable comfort across campuses and institutes.',
+    tags: ['Lab HVAC', 'UPS', 'AMC'],
+    featured: false
+  }
 ]
 
 export const partners = [

@@ -79,7 +79,7 @@ async function submit() {
           <Textarea id="message" v-model="form.message" required rows="5" placeholder="Tell us about your requirement — site location, capacity, timeline…" />
         </div>
 
-        <Button type="submit" size="lg" class="w-full bg-brand-gradient" :disabled="status === 'loading'">
+        <Button type="submit" size="lg" class="btn-shine w-full bg-brand-gradient on-gradient transition-all duration-300 hover:shadow-lg hover:shadow-brand-green/30" :disabled="status === 'loading'">
           {{ status === 'loading' ? 'Sending…' : 'Send Enquiry' }}
         </Button>
 
